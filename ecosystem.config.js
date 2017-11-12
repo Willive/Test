@@ -10,7 +10,7 @@ module.exports = {
         key: process.env.KEY,
         ref: process.env.REF,
         repo: process.env.REPO,
-        path: process.env.PATH,
+        path: process.env.APP_PATH,
         'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js'
       }
     }
