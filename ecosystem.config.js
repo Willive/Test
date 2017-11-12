@@ -10,7 +10,7 @@ module.exports = {
         key: '~/will-web.pem',
         ref: 'origin/master',
         repo: 'git@github.com:Willive/wweb.git',
-        path: '/home/ubuntu/wweb',
+        path: '/home/ubuntu/webapp',
         'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js'
       }
     }
