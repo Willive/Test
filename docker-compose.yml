@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  wweb:
+    build: .
+    #command: npm run dev
+    ports:
+      - '${SERVER_PORT}:${SERVER_PORT}'
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    environment:
+      SERVER_PORT: ${SERVER_PORT}
+      USER: ${USER}
+      HOST: ${HOST}
+      KEY: ${KEY}
+      REF: ${REF}
+      REPO: ${REPO}
+      APP_PATH: ${APP_PATH}
