@@ -1,7 +1,7 @@
 module.exports = {
     apps: [{
       name: 'wweb',
-      script: './index.js'
+      script: './src/index.js'
     }],
     deploy: {
       production: {
