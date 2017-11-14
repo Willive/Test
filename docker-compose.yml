@@ -1,11 +1,15 @@
 version: '2'
 
 services:
-  wweb:
+  nginx:
+    build: ./nginx/
+    links:
+      - node:node
+    ports:
+      - 80:80
+  node:
     build: .
     #command: npm run dev
-    ports:
-      - '${SERVER_PORT}:${SERVER_PORT}'
     volumes:
       - .:/usr/app/
       - /usr/app/node_modules
