@@ -14,7 +14,7 @@ services:
       - .:/usr/app/
       - /usr/app/node_modules
     environment:
-      SERVER_PORT: ${SERVER_PORT}
+      SERVER_PORT: ${NODE_PORT}
       USER: ${USER}
       HOST: ${HOST}
       KEY: ${KEY}
